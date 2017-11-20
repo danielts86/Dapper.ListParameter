@@ -8,15 +8,16 @@ using System.Reflection;
 namespace Dapper.ListParameter
 {
     public static class DapperListParameterExtension
-    {/// <summary>
-     /// Add new dynamic parameter from list of object
-     /// </summary>
-     /// <typeparam name="T">type of enumerable</typeparam>
-     /// <param name="source">dapper dynamic parameters</param>
-     /// <param name="name">parameter name</param>
-     /// <param name="dataTableType">sql user-defined table type name</param>
-     /// <param name="enumerable">list of values</param>
-     /// <param name="orderedColumnNames">if more than one column in a TVP, columns order must match order of columns in TVP</param>
+    {
+        /// <summary>
+        /// Add new dynamic parameter from list of object
+        /// </summary>
+        /// <typeparam name="T">type of enumerable</typeparam>
+        /// <param name="source">dapper dynamic parameters</param>
+        /// <param name="name">parameter name</param>
+        /// <param name="dataTableType">sql user-defined table type name</param>
+        /// <param name="enumerable">list of values</param>
+        /// <param name="orderedColumnNames">if more than one column in a TVP, columns order must match order of columns in TVP</param>
         public static void AddList<T>(this DynamicParameters source, string name, string dataTableType, IEnumerable<T> enumerable, IEnumerable<string> orderedColumnNames = null)
         {
             var dataTable = new DataTable();
