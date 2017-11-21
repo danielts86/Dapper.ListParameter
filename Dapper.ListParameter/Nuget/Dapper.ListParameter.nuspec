@@ -2,7 +2,7 @@
 <package >
   <metadata>
 	<id>Dapper.ListParameter</id>
-    <version>0.0.1</version>
+    <version>$version$</version>
     <title>Dapper List Parameter Extensions</title>
     <authors>Daniel Tshuva</authors>
     <owners>Daniel Tshuva</owners>
