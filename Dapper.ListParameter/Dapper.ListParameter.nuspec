@@ -10,6 +10,7 @@
     <description>Extension on Dapper Dynamic Parameters for passing list of objects</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2017</copyright>
+    <projectUrl>https://github.com/danielts86/Dapper.ListParameter</projectUrl>
     <tags>dapper</tags>
   </metadata>
 </package>
